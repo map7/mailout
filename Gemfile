@@ -38,4 +38,8 @@ gem 'jquery-rails'
 # To use debugger
 # gem 'debugger'
 
+gem 'inherited_resources'
+gem 'simple-navigation'
+
 gem 'the_merger', path: '/home/map7/rc13/the_merger'
+

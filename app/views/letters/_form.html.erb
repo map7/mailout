@@ -11,13 +11,18 @@
     </div>
   <% end %>
 
+
+
   <div class="field">
     <%= f.label :subject %><br />
     <%= f.text_field :subject %>
   </div>
+  
+  Enter fields: <%= @fields %>
+
   <div class="field">
     <%= f.label :body %><br />
-    <%= f.text_field :body %>
+    <%= f.text_area :body %>
   </div>
   <div class="actions">
     <%= f.submit %>

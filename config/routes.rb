@@ -1,8 +1,11 @@
 Mailout::Application.routes.draw do
   resources :letters
 
-
-  resources :users
+  resources :users do
+    collection do
+      get 'batch_mail'
+    end
+  end
 
 
   # The priority is based upon order of creation:
