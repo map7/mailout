@@ -4,7 +4,6 @@
 
 $ ->
   $('.insert_field').click ->
-    #alert $('#field').val()
     start=$(".mail_merge_body").caret().start;
     first_half=$(".mail_merge_body").val().slice(0, start);
     last_half=$(".mail_merge_body").val().slice(start, $(".mail_merge_body").len);
