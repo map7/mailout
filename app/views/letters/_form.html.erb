@@ -18,11 +18,11 @@
     <%= f.text_field :subject %>
   </div>
   
-  Enter fields: <%= @fields %>
+  <%= field_selection %>
 
   <div class="field">
     <%= f.label :body %><br />
-    <%= f.text_area :body %>
+    <%= f.text_area :body, class: "mail_merge_body" %>
   </div>
   <div class="actions">
     <%= f.submit %>
