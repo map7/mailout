@@ -1,8 +1,9 @@
 class UsersController < InheritedResources::Base
-
+  include TheMerger
+  
   def batch_mail
     body = "Dear [firstname] [lastname], Please update your listing, from Mick"
-    TheMerger.merge_fields(body, "firstname", "lastname")
+    merge_fields(body, "firstname", "lastname")
     redirect_to users_path
   end
 
