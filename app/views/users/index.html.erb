@@ -1,6 +1,11 @@
 <h1>Listing users</h1>
 
-<%= link_to 'Email all',batch_mail_users_path %>
+<%= form_tag batch_mail_users_path do %>
+	<%= select_tag :letter, options_for_select(Letter.all.map(&:subject)) %>
+
+	<%= submit_tag 'Email all' %>
+<% end %>
+
 
 <table>
   <tr>

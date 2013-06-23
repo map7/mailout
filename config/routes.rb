@@ -3,7 +3,7 @@ Mailout::Application.routes.draw do
 
   resources :users do
     collection do
-      get 'batch_mail'
+      post 'batch_mail'
     end
   end
 
