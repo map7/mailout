@@ -12,6 +12,5 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require jquery.caret.1.02
-//= require the_merger/insert_field
+//= require the_merger/application
 //= require_tree .
