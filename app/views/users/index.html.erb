@@ -1,7 +1,7 @@
 <h1>Listing users</h1>
 
 <%= form_tag batch_mail_users_path do %>
-	<%= select_tag :letter, options_for_select(Letter.all.map(&:subject)) %>
+	<%= select_tag :letter, options_for_select(Letter.all.map{|l| [l.subject,l.id]}) %>
 
 	<%= submit_tag 'Email all' %>
 <% end %>

@@ -41,5 +41,6 @@ gem 'jquery-rails'
 gem 'inherited_resources'
 gem 'simple-navigation'
 gem 'kaminari'
+gem 'pry'
 
 gem 'the_merger', path: '/home/map7/rc13/the_merger'
