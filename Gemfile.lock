@@ -46,6 +46,8 @@ GEM
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
+    formtastic (2.2.1)
+      actionpack (>= 3.0)
     has_scope (0.5.1)
     hike (1.2.3)
     i18n (0.6.4)
@@ -128,6 +130,7 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 3.2.1)
+  formtastic
   inherited_resources
   jquery-rails
   kaminari
