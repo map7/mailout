@@ -43,5 +43,6 @@ gem 'simple-navigation'
 gem 'kaminari'
 gem 'formtastic'
 gem 'pry'
+gem 'letter_opener', group: :development
 
 gem 'the_merger', path: '/home/map7/rc13/the_merger'

@@ -34,4 +34,7 @@ Mailout::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+  
+  # Show emails in a web browser
+  config.action_mailer.delivery_method = :letter_opener
 end
