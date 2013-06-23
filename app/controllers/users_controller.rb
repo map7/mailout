@@ -5,7 +5,7 @@ class UsersController < InheritedResources::Base
     letter= Letter.find(params[:letter])
 
     if letter
-      merge_fields(letter.body, "firstname", "lastname")
+      merge_fields(letter.body)
       flash[:notice] = "Letter '#{letter.subject}' sent"
     else
       flash[:error] = "Could not find letter."
