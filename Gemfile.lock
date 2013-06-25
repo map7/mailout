@@ -1,7 +1,7 @@
 PATH
   remote: ../the_merger
   specs:
-    the_merger (0.0.2)
+    the_merger (0.0.3)
 
 GEM
   remote: https://rubygems.org/
