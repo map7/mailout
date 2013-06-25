@@ -1,5 +1,4 @@
-#source 'https://rubygems.org'
-source 'http://rubygems.railscamp.org'
+source 'https://rubygems.org'
 
 gem 'rails', '3.2.11'
 
@@ -45,4 +44,4 @@ gem 'formtastic'
 gem 'pry'
 gem 'letter_opener', group: :development
 
-gem 'the_merger', path: '/home/map7/rc13/the_merger'
+gem 'the_merger', path: '../the_merger'
