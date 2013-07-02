@@ -1,7 +1,7 @@
 PATH
   remote: /home/map7/rc13/the_merger
   specs:
-    the_merger (0.0.1)
+    the_merger (0.0.3)
 
 GEM
   remote: http://rubygems.railscamp.org/
