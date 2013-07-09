@@ -34,6 +34,22 @@ class UsersController < InheritedResources::Base
   def index
     @q = User.search(params[:q])
     @users = @q.result(distinct: true)
+
+    if params[:commit] == "Email Result"
+      letter= Letter.find(params[:letter])
+
+      if letter
+        mail_merge(from: "map7777@gmail.com",
+                   subject: letter.subject,
+                   body: letter.body,
+                   group: @users)
+        flash[:notice] = "Letter '#{letter.subject}' sent"
+      else
+        flash[:error] = "Could not find letter."
+      end
+      
+      redirect_to users_path
+    end
   end
   
   def create
