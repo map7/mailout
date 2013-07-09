@@ -1,7 +1,7 @@
 PATH
   remote: /home/map7/rc13/the_merger
   specs:
-    the_merger (0.0.3)
+    the_merger (0.1.1)
 
 GEM
   remote: http://rubygems.railscamp.org/
@@ -44,6 +44,14 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.6.2)
+    columnize (0.3.6)
+    debugger (1.2.3)
+      columnize (>= 0.3.1)
+      debugger-linecache (~> 1.1.1)
+      debugger-ruby_core_source (~> 1.1.5)
+    debugger-linecache (1.1.2)
+      debugger-ruby_core_source (>= 1.1.1)
+    debugger-ruby_core_source (1.1.6)
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
@@ -135,6 +143,7 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 3.2.1)
+  debugger
   formtastic
   inherited_resources
   jquery-rails

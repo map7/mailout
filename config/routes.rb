@@ -5,6 +5,10 @@ Mailout::Application.routes.draw do
     collection do
       post 'batch_mail'
     end
+
+    member do
+      post 'single_mail'
+    end
   end
 
 

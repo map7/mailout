@@ -1,0 +1,5 @@
+<%= form_tag path do %>
+	<%= select_tag :letter, options_for_select(Letter.all.map{|l| [l.subject,l.id]}) %>
+
+	<%= submit_tag 'Email' %>
+<% end %>
