@@ -82,6 +82,8 @@ GEM
     method_source (0.8.1)
     mime-types (1.23)
     multi_json (1.7.7)
+    polyamorous (0.5.0)
+      activerecord (~> 3.0)
     polyglot (0.3.3)
     pry (0.9.12.2)
       coderay (~> 1.0.5)
@@ -110,6 +112,10 @@ GEM
       rdoc (~> 3.4)
       thor (>= 0.14.6, < 2.0)
     rake (10.0.4)
+    ransack (0.7.2)
+      actionpack (~> 3.0)
+      activerecord (~> 3.0)
+      polyamorous (~> 0.5.0)
     rdoc (3.12.2)
       json (~> 1.4)
     responders (0.9.3)
@@ -151,6 +157,7 @@ DEPENDENCIES
   letter_opener
   pry
   rails (= 3.2.11)
+  ransack
   sass-rails (~> 3.2.3)
   simple-navigation
   sqlite3

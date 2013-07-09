@@ -1,5 +1,13 @@
 <h1>Listing users</h1>
 
+<%= search_form_for @q do |f| %>
+  <%= f.label :firstname_cont %>
+  <%= f.text_field :firstname_cont %>
+  <%= f.label :lastname_cont %>
+  <%= f.text_field :lastname_cont %>
+  <%= f.submit %>
+<% end %>
+
 <%= render "mail_merge", path: batch_mail_users_path %>
 
 <table>

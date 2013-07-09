@@ -43,5 +43,6 @@ gem 'kaminari'
 gem 'formtastic'
 gem 'pry'
 gem 'letter_opener', group: :development
+gem 'ransack'
 
 gem 'the_merger', path: '../the_merger'

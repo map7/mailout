@@ -24,13 +24,18 @@ class UsersController < InheritedResources::Base
                  subject: letter.subject,
                  body: letter.body,
                  single: user)
-      flash[:notice] = "Letter '#{letter.subject}' sent"
+      flash[:notice] = "Letter '#{letter.subject}' sent to '#{user.firstname} #{user.lastname}'"
     else
       flash[:error] = "Could not find letter."
     end
     redirect_to user_path(params[:id])
   end
 
+  def index
+    @q = User.search(params[:q])
+    @users = @q.result(distinct: true)
+  end
+  
   def create
     create!{users_path}
   end
